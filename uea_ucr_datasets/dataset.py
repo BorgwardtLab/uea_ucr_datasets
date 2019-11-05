@@ -52,7 +52,7 @@ def list_datasets():
     ]
 
 
-class UEA_UCR_Dataset(Sequence):
+class Dataset(Sequence):
     """Datasets from the UCR time series archiv."""
 
     def __init__(self, name, train=True):
@@ -63,7 +63,6 @@ class UEA_UCR_Dataset(Sequence):
             train: Return train split when True, test split when False.
 
         """
-
         data_path = _build_UEA_UCR_data_path(name, train)
 
         self.data_x, self.data_y = load_from_tsfile_to_dataframe(data_path)
