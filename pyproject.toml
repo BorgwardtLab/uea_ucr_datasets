@@ -1,8 +1,9 @@
 [tool.poetry]
 name = "uea_ucr_datasets"
 version = "0.1.0"
-description = ""
+description = "A small package for loading and handling UEA UCR time series classification datasets."
 authors = ["Max Horn <max.horn@bsse.ethz.ch>"]
+include = ["README.md"]
 
 [tool.poetry.dependencies]
 python = "^3.7"
