@@ -9,7 +9,7 @@ authors = ["Max Horn <max.horn@bsse.ethz.ch>"]
 include = ["README.md"]
 
 [tool.poetry.dependencies]
-python = "^3.6"
+python = ">=3.6.1"
 sktime = "^0.3"
 
 [tool.poetry.dev-dependencies]
